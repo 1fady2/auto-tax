@@ -1,7 +1,7 @@
+const { Client } = require('discord.js')
 const express = require('express');
 const app = express();
-
-
+const client = new Client({ intents: 53608447}) 
 app.get('/', (req, res) => {
   res.send('Hello Express app!')
 })
